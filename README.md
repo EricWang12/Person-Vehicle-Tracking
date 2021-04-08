@@ -12,6 +12,8 @@ The sample videos are Here:
 
 https://drive.google.com/drive/folders/1rSUEbi-ZsMgLg4ydVwZE-F7fRrP7yzzf?usp=sharing
 
+_(It's probably quite hard to visualize in Google Drive preview mode, please download to see in full resulotion)_
+
 The float in their names are the confidence thresholds used during the inference.
 
 The green/blue boxes are detections with each color representing a object identity (for visualization).
