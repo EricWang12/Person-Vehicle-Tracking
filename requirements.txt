@@ -1,0 +1,16 @@
+# pip install -U -r requirements.txt
+Cython
+easydict
+matplotlib>=3.2.2
+numpy>=1.18.5
+opencv-python== 4.3.0.38
+Pillow
+tensorboard
+torch==1.7.0
+torchvision==0.8.1
+tqdm>=4.41.0
+seaborn>=0.11.0
+PyYAML==5.3 --install-option='--ignore-installed'
+scipy==1.4.1
+motmetrics
+lap
