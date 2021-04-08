@@ -54,7 +54,7 @@ sudo docker run --rm --gpus all nvidia/cuda:11.0-base nvidia-smi
 ```
 
 
-### Run the MAL inference
+### Run the inference
 
 ```bash
 sudo docker run --gpus all -v .:/workspace --rm --ipc=host -it nvcr.io/nvidia/pytorch:19.10-py3
