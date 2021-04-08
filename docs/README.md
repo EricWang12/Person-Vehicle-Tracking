@@ -101,28 +101,34 @@ Then convert for  ODTK
 python models/transfer_model.py
 ```
 
+### Download the dataset 
+
+You can download the VisDrone From [HERE](https://github.com/VisDrone/VisDrone-Dataset)
+
+
+
+you can also use [process-dataset.py](./process-dataset.py) to convert and resize VisDrone
+
 
 ### Run the model
 
 ```bash
-# vanilla original model
+# vanilla original model on COCO
 CUDA_VISIBLE_DEVICES=0 retinanet infer --config "./configs/MAL_R-50-FPN_e2e.yaml"  --images ./COCO-DATASET-2017/val2017/   --annotations ./COCO-DATASET-2017/annotations/instances_val2017.json --batch=1
 
 
 # changed inference
 
-python retinanet/main.py infer --config "./configs/MAL_R-50-FPN_e2e.yaml"  --images ./COCO-DATASET-2017/val2017/   --annotations ./COCO-DATASET-2017/annotations/instances_val2017.json --batch=1
-
+python retinanet/main.py infer --config "./configs/MAL_R-50-FPN_e2e.yaml"  --images $YOUR-VISDRONE-SEQUENCE-FOLDER   --annotations $CONVERTED-JSON-ANNOTATION --batch=1
 
 ```
 
-you can also use [process-dataset.py](./process-dataset.py) to convert and resize VisDrone
-
+**NOTE** that I have not test the cases for batch > 1 
 
 
 ### MISC
 
-convert frame to 16fps video
+convert frames to 16fps video
 
 ```bash
 

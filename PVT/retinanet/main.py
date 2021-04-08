@@ -30,7 +30,7 @@ def parse(args):
                               help='evaluate using provided annotations')
     parser_infer.add_argument('--output', metavar='file', type=str, help='save detections to specified JSON file',
                               default='detections.json')
-    parser_infer.add_argument('--batch', metavar='size', type=int, help='batch size', default=4 * devcount)
+    parser_infer.add_argument('--batch', metavar='size', type=int, help='batch size', default=1)
     parser_infer.add_argument('--resize', metavar='scale', type=int, help='resize to given size', default=800)
     parser_infer.add_argument('--max-size', metavar='max', type=int, help='maximum resizing size', default=1333)
     parser_infer.add_argument('--with-dali', help='use dali for data loading', action='store_true')
