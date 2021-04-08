@@ -2,7 +2,7 @@
 
 ## Setup guide
 
-Please refer to [Setup-and-Run-guide](./docs) for details
+Please refer to [Setup-and-Run-guide](./PVT/README.md) for details
 
 
 ## Output Videos note:
