@@ -99,7 +99,7 @@ for example the red crowd in the middle:
 
 ### confidence threshold
 
-One of a very important metrics, MOTA performs poorly in crowded areas with default settings, which threshold the minimum confidence to 0.3.
+One of very important metrics, MOTA performs poorly in crowded areas with default settings, which threshold the minimum confidence to 0.3.
 
 However, this is due to the very high amount of false positives, so increasing the threshold helps a lot with false positives until it reached to about 0.8, where the true positives started to drop significantly.
 
@@ -124,6 +124,7 @@ Both the MOT and mAP metrics went down as the resolution gets lower, which is ex
 
  Also, when the resulotion is extremely small, deepsort has hard time processing it. I think it is due to many overlapped bounding box at smaller resulotions.
 
+![](./docs/legend.png)
 ![](./docs/resulotions.png)
 
 
@@ -131,6 +132,7 @@ Both the MOT and mAP metrics went down as the resolution gets lower, which is ex
 
 This is pretty much what expected - larger model comes with better detection results but slower fps
 
+![](./docs/legend.png)
 ![](./docs/X-101.png)
 
 ### Number of proposals

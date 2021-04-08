@@ -119,11 +119,9 @@ CUDA_VISIBLE_DEVICES=0 retinanet infer --config "./configs/MAL_R-50-FPN_e2e.yaml
 
 # changed inference
 
-python retinanet/main.py infer --config "./configs/MAL_R-50-FPN_e2e.yaml"  --images $YOUR-VISDRONE-SEQUENCE-FOLDER   --annotations $CONVERTED-JSON-ANNOTATION --batch=1
+python retinanet/main.py infer --config "./configs/MAL_R-50-FPN_e2e.yaml"  --images $YOUR-VISDRONE-SEQUENCE-FOLDER   --annotations $CONVERTED-JSON-ANNOTATION
 
 ```
-
-**NOTE** that I have not test the cases for batch > 1 
 
 
 ### MISC
