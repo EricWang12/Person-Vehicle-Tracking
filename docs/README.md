@@ -57,8 +57,9 @@ sudo docker run --rm --gpus all nvidia/cuda:11.0-base nvidia-smi
 ### Run the MAL inference
 
 ```bash
-sudo docker run --gpus all -v /home/user/EricWang/HSL/HSL-interview:/workspace --rm --ipc=host -it nvcr.io/nvidia/pytorch:19.10-py3
+sudo docker run --gpus all -v .:/workspace --rm --ipc=host -it nvcr.io/nvidia/pytorch:19.10-py3
 
+cd PVT
 
 # Live above goes into nvidia docker and then run:
 python setup.py clean --all install
