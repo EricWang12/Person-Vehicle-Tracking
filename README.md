@@ -189,7 +189,7 @@ Some parameters that help improve the model while have little/none negative affe
 # almost always give better metric results
 
   distances.sort(axis=0)    # sorted firstly
-  return distances[2:5].mean(axis=0)  #average  2-5  features
+  return distances[1:5].mean(axis=0)  #average  2-5  features
 
   # return distances.min(axis=0)
 
@@ -198,3 +198,8 @@ Some parameters that help improve the model while have little/none negative affe
 experiment results:
 
 ![](./docs/num_DIST+weights.png)
+
+
+Updated: More detailed ablation study on distance averaging:
+
+![](./docs/distance.png)
