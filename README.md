@@ -137,9 +137,15 @@ This is pretty much what expected - larger model comes with better detection res
 
 ### Number of proposals
 
-Included in the task requirement, the number of proposals (from RPN?) can't be changed from anywhere I can find. :(  
-  
-   I tried change the proposals in the yaml file as well as the "config_default.py" file but there is almost no changes during the inference time.
+In low confidence thresholds, choosing a low number of proposals from the model can act as a sort-of high confidence threshold, which significantly reduce false positives.
+
+![](./docs/legend.png)
+![](docs/proposals-0.3.png)
+
+While on the other hand, for higher confidence threshold, lower numbers of proposals become limiting factors, and increasing the number have slight/none improvement (compare to default of 1000):
+
+![](docs/proposals-0.7-8.png)
+
 
 
 ### Kalman Filter weight thrsholds
@@ -180,7 +186,7 @@ Choosing large weights(thresholds) can relief that problem by increase the toler
 Some parameters that help improve the model while have little/none negative affect:
 
 ```python
-# The distance threhold , increase tolerance
+# The distance threhold , increase tolerance while only have slight/none impact on the metrics
   MAX_DIST: 0.25 # default -> 0.2
 
 
