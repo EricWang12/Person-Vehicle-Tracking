@@ -137,7 +137,7 @@ This is pretty much what expected - larger model comes with better detection res
 
 ### Number of proposals
 
-In low confidence thresholds, choosing a low number of proposals from the model can act as a sort-of high confidence threshold, which significantly reduce false positives.
+In low confidence thresholds, using a low number of proposals from the model can act as a sort-of high confidence threshold, which significantly reduce false positives.
 
 ![](./docs/legend.png)
 ![](docs/proposals-0.3.png)
