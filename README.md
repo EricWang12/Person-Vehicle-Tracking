@@ -192,7 +192,7 @@ Some parameters that help improve the model while have little/none negative affe
 
 # in retinanet/deep_sort_pytorch/deep_sort/sort/nn_matching.py : _nn_cosine_distance ()
 # averaging the distance to increase tolerance
-# almost always give better metric results
+# almost always give better MOTA results while decrease very slight MOTP
 
   distances.sort(axis=0)    # sorted firstly
   return distances[1:5].mean(axis=0)  #average  2-5  features
