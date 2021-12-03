@@ -1,4 +1,4 @@
-# HSL-interview
+# Tracking of persons and vehicles
 
 ## Setup guide
 
